@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- README split into English (`README.md`) and Simplified Chinese (`README.zh-CN.md`), with a language switcher and badges at the top.
+
 ## 0.1.0 — 2026-09-28
 
 First public version.

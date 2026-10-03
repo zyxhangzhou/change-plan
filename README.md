@@ -1,5 +1,11 @@
 # change-plan
 
+**English** | [简体中文](README.zh-CN.md)
+
+[![Version](https://img.shields.io/github/v/tag/zyxhangzhou/change-plan?label=version)](https://github.com/zyxhangzhou/change-plan/tags)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-d97757)](https://docs.claude.com/en/docs/claude-code/skills)
+
 A [Claude Code](https://claude.com/claude-code) skill that keeps a **versioned plan** for any requirement too big for one change.
 
 > Status: **v0.1, experimental.** It has been used on real work, but only a few times. Expect the template to change.
@@ -62,15 +68,6 @@ Edit [`config.md`](config.md):
 ## Works well with
 
 Any unit of work you ship: a branch, a PR, a ticket, or an [OpenSpec](https://github.com/Fission-AI/OpenSpec) change. The plan owns the breakdown and order; each change's own spec or ticket owns its detailed scope.
-
-## 中文说明
-
-一个 Claude Code skill：把「需要拆成多个 change 才能完成的需求」写成**带版本的计划文档**，并在开发过程中持续维护。
-
-- 拆分方式变化（新增、拆分、合并、作废、重排、前提被推翻）才出新版本，并附「和上一版相比」的对照表；PR 合并这类状态变化直接在最新版上打勾。
-- change 编号永不重排：A 拆开变 `A.1`、`A.2`，原行保留；新插入的用下一个未用字母。
-- 每个版本记录 Claude Code 的 session ID，可以用 `claude --resume <id>` 回到当时的对话。
-- 计划正文语言可配置（`config.md` 里的 `default_language`，或调用时 `/change-plan <slug> zh`）。
 
 ## License
 
